@@ -8,8 +8,8 @@ function setup(){
 }
 
 function draw(){
-  background(bg);
-  circle(30, 30, 20);
+  background(bg)
+  circle(30, 30, 20)
 
 
 }
