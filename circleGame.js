@@ -1,5 +1,4 @@
 let bg;
-let y = 0;
 
 function setup(){
   bg = loadImage('20477459.jpg')
