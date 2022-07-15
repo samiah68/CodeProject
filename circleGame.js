@@ -40,21 +40,21 @@ textFont(customFont)
     redCircleY.push(random(height));
     redCircleX.push(random(width));
      redSpeedX.push(random(2,4))
-     redSpeedY.push( random(1,8))
+     redSpeedY.push( random(1,6))
   }
 
   for(let i = 0; i < 20; i++){
     greenCircleY.push(random(height));
     greenCircleX.push(random(width));
-     greenSpeedX.push(random(1,6))
+     greenSpeedX.push(random(1,3))
      greenSpeedY.push( random(1,3))
   }
 
   for(let i = 0; i < 30; i++){
     blueCircleY.push(random(height));
     blueCircleX.push(random(width));
-     blueSpeedX.push(random(1,3))
-     blueSpeedY.push( random(1,3))
+     blueSpeedX.push(random(1,2))
+     blueSpeedY.push( random(2,4))
   }
 
 
@@ -139,7 +139,7 @@ fill(3, 252, 44)
 for(let i = 0; i < blueCircleY.length; i++){
 // let circleX = width * i / circleY.length
 fill(0, 47, 255)
-  circle(blueCircleX[i], blueCircleY[i], 25);
+  circle(blueCircleX[i], blueCircleY[i], 40);
 
   blueCircleY[i] = blueCircleY[i] + blueSpeedY[i];
   blueCircleX[i] = blueCircleX[i] + blueSpeedX[i];
@@ -162,7 +162,7 @@ fill(0, 47, 255)
     bloop.play()
  }
 }
-if(score == 100){
+if(score == 50){
   winScreenBool = true
   startGameBool = false
 }
